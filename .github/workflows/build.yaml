@@ -26,13 +26,13 @@ jobs:
       run: ls -R
 
     - name: list your repo before build
-      run : ls -IR Git2Workshop/bin
+      run : ls -IR TicTacToe/bin
 
     - name: build app
       run: dotnet build
 
     - name: list files after build
-      run: ls -IR Git2Workshop/bin
+      run: ls -IR TicTacToe/bin
 
         
         
