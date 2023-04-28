@@ -4,10 +4,10 @@ on:
     push:
 
 jobs:
-    build_dot.net:
+    build_ttt:
         runs-on: ubuntu-latest
         steps:
-        - name : setup_dotnet.sdk
+        - name : setup dotnet sdk
           uses: actions/setup-dotnet@v3
           with:
             dotnet-version: 6.0.x
