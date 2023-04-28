@@ -19,14 +19,14 @@ jobs:
     - name: Git2Workshop
       run: ls -l
 
-     - name: list your repo before build
-       run : ls -lR Git2Workshop/bin
+    - name: list your repo before build
+      run : ls -lR Git2Workshop/bin
 
-     - name: build app
-       run: dotnet build
+    - name: build app
+      run: dotnet build
 
-     - name: list files after build
-       run: ls -IR Git2Workshop/bin
+    - name: list files after build
+      run: ls -IR Git2Workshop/bin
 
         
         
