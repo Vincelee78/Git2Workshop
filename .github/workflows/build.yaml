@@ -12,11 +12,21 @@ jobs:
           with:
             dotnet-version: 6.0.x
 
-        - name: checkout master
+        - name: checkout your source
           uses: actions/checkout@v3
 
         - name: Git2Workshop
           run: ls-l
+
+        - name: list your repo before build
+          run : ls-lR Git2Workshop
+
+
+        - name: build app
+         run: dotnet build
+
+         - name: list files after build
+         run: ls - lR Git2Workshop
 
         
         
