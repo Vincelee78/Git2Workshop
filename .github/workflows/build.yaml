@@ -19,6 +19,12 @@ jobs:
     - name: Git2Workshop
       run: ls -l
 
+    - name: Navigate to the root directory of the repository
+      run: cd $GITHUB_WORKSPACE
+  
+    - name: List the contents of the repository
+      run: ls -R
+
     - name: list your repo before build
       run : ls -IR Git2Workshop/bin
 
