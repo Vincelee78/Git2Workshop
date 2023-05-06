@@ -8,6 +8,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: cowsay something
+      uses: mscoutermarsh/cowsays-action@master
+      with: 
+        text: ${{ github.event.head_commit.message }}
+        color: 'blue'
+    
     - name : setup dotnet sdk
       uses: actions/setup-dotnet@v3
       with:
