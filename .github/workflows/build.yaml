@@ -23,13 +23,13 @@ jobs:
       run: ls -R
 
     - name: list your repo before build
-      run : ls -IR ./bin
+      run : ls -R ./bin
 
     - name: build app
       run: dotnet build
 
     - name: list files after build
-      run: ls -IR ./bin
+      run: ls -R ./bin
 
         
         
